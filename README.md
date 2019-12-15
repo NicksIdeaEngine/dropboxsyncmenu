@@ -59,6 +59,8 @@ And the 'Excluded Directories' menu:
 * If needed, set the `FILE` variable to a directory this script can use for its `.tmp` file. (the file gets auto deleted at the end).  The default is your `$HOME` directory, but I use `$HOME/.temp`
 * If you don't use ZSH, change the first line of both scripts to match your shell (example for Bash users: `#!/bin/bash` )
 
+**Note:** The 'Synced Directories' search uses the `tree` command and has a depth of 2 when building the menu list (meaning it won't show a `pics/vacation/bali` directory since that is 3 directories deep).  To change this, go to [line 26 in the dropboxsyncmenu script](https://github.com/NicksIdeaEngine/dropboxsyncmenu/blob/35aa87a59845123bfb3206d77d9676aee21e387e/dropboxsyncmenu#L26) and change `2` to your preferred depth.
+
 #### Step 2. Set up Polybar
 
 * Add the `dropboxstatus` module from the `user_modules.ini` file:
