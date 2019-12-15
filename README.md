@@ -53,10 +53,10 @@ And the 'Excluded Directories' menu:
 
 #### Step 1. Add Scripts
 
-* Move the `dropboxstatus` and `dropboxsyncmenu` files to your scripts folder. For me this is a folder in my Dropbox, but you can use `~/.config/polybar/scripts` as well.
+* Move the `dropboxstatus` and `dropboxsyncmenu` files to your scripts directory. For me this is in `Dropbox/scripts`, but you can use the default of `$HOME/.config/polybar/scripts` as well.
 * Make sure both of those files are executible by running `chmod +x <filename>`
-* Set the `DROPBOX` variable in `dropboxsyncmenu` to wherever your Dropbox folder is located.
-* If needed, set the `FILE` variable to a folder this script can use for its `.tmp` file. (the file gets auto deleted at the end)
+* Set the `DROPBOX` variable in `dropboxsyncmenu` to wherever your Dropbox directory is located if different from `$HOME/Dropbox`
+* If needed, set the `FILE` variable to a directory this script can use for its `.tmp` file. (the file gets auto deleted at the end).  The default is your `$HOME` directory, but I use `$HOME/.temp`
 * If you don't use ZSH, change the first line of both scripts to match your shell (example for Bash users: `#!/bin/bash` )
 
 #### Step 2. Set up Polybar
@@ -69,6 +69,6 @@ And the 'Excluded Directories' menu:
 
 #### Step 3. Set up Rofi
 
-* Add `centermenu.rasi` to your `.config/rofi` directory
+* Add `centermenu.rasi` to your `~/.config/rofi` directory
   * If you don't have [Fira Code](https://github.com/tonsky/FiraCode) installed, either install it or change the font on line 9 of the `centermenu.rasi` file.
   
