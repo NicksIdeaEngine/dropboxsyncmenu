@@ -9,6 +9,7 @@ These scripts provide an easy way to manage sync settings for Dropbox on Linux.
 
 Make sure you have the following installed before using `dropboxsyncmenu`:
 
+* [Dropbox](https://www.dropbox.com/install-linux)
 * sed
 * tree
 * [Rofi](https://github.com/davatorium/rofi)
