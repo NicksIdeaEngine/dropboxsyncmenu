@@ -2,10 +2,10 @@
 
 # this is a temp file used for holding the list of Dropbox
 # directories you can add or remove from the exclude list
-FILE=/home/efex/.temp/dropboxsyncmenu.tmp
+FILE=$HOME/dropboxsyncmenu.tmp
 
 # Set this variable to wherever your Dropbox directory is
-DROPBOX=/mnt/sdc1/Dropbox
+DROPBOX=$HOME/Dropbox
 
 # removes $FILE if it exists, then makes a new one
 if [[ -e $FILE ]]; then
